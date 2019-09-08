@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="lib/org.apache.httpcomponents.httpclient_4.3.6.v201511171540.jar" sourcepath="C:/Users/meteor/AppData/Local/Temp/.org.sf.feeling.decompiler1567816480259/source/org.apache.httpcomponents.httpclient.source_4.3.6.v201511171540.jar"/>
+	<classpathentry kind="lib" path="lib/org.apache.httpcomponents.httpcore_4.3.3.v201411290715.jar"/>
+	<classpathentry kind="lib" path="lib/org.apache.commons.lang3_3.1.0.v201403281430.jar"/>
+	<classpathentry kind="lib" path="lib/json-20180130.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
