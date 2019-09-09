@@ -1,10 +1,12 @@
 package com.andrew.httpclient.demo;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.charset.UnsupportedCharsetException;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -58,6 +60,7 @@ public class AndrewHttpClient {
 			System.out.println("code:" + response.getStatusLine().getStatusCode());
 			System.out.println("phase:" + response.getStatusLine().getReasonPhrase());
 			System.out.println("protocol:" + response.getStatusLine().getProtocolVersion());
+			System.out.println("url:" + request.getURI());
 			
 			HttpEntity entity = response.getEntity();
 			
@@ -138,6 +141,9 @@ public class AndrewHttpClient {
 			StringEntity requestEntity = null;
 			try{
 				requestEntity = new StringEntity(body, "UTF-8");
+//				InputStream iStream = requestEntity.getContent();
+//				String bodySending = IOUtils.toString(iStream, "UTF-8");
+//				System.out.println("body:" + bodySending);
 			} catch (UnsupportedCharsetException e){
 				requestEntity = null;
 			}

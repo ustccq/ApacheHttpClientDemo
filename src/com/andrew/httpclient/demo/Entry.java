@@ -10,17 +10,15 @@ import org.json.JSONObject;
 
 public class Entry {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		CloseableHttpResponse response;
+		
 		AndrewHttpClient client = new AndrewHttpClient();
 		
-		File http = new File("resource/http.json");
         String content;
 		try {
 			String bodyStr = FileUtils.readFileToString(new File("resources/body.json"), "UTF-8");
-			String headerStr = FileUtils.readFileToString(new File("resource/header.json"), "UTF-8");
+			String headerStr = FileUtils.readFileToString(new File("resources/header.json"), "UTF-8");
 			
-			content = FileUtils.readFileToString(http, "UTF-8");
+			content = FileUtils.readFileToString(new File("resources/http.json"), "UTF-8");
 			JSONObject httpObj  = StringUtils.isEmpty(content) ? null : new JSONObject(content);
 			
 			String url;
